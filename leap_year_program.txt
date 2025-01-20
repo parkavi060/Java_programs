@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	    System.out.println("Enter the year:");
+	    int year=scan.nextInt();
+	    if(year % 4 == 0 || (year % 400 ==0 && year % 100!=0))
+	    
+	    
+	    /** (year % 400 ==0 && year % 100!=0)-->to check the century year is leap year or not like 2500,1900etc.. **/
+	    
+	    
+	    {
+	        System.out.println("Ït is leap year");
+	    }
+	    else{
+	        System.out.println("Not a leap year");
+	    }
+	}}

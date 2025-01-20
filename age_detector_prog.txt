@@ -1,0 +1,28 @@
+qn: Find the age of a person by getting only last two integers of birthyear and  current year...
+
+
+
+
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] demo) {
+	    Scanner scan=new Scanner(System.in);
+	    System.out.println("Enter the birthyear:");
+	    int a=scan.nextInt();
+	    System.out.println("Enter the currentyear:");
+	    int b=scan.nextInt();
+	    int c=(100-a)+b;
+	    int d=b-a;
+	    if(a>b){
+	    System.out.println(c);
+	    
+	    
+	    }
+	    else{
+	        System.out.println(d);
+	    }
+	}
+}

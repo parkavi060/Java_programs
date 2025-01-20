@@ -1,0 +1,41 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Enter the value of a");
+		int a=scan.nextInt();
+		System.out.println("Enter the value of b");
+		int b=scan.nextInt();
+		System.out.println("Enter the operator");
+		char c=scan.next().charAt(0);
+		switch(c){
+		    case '+' :
+		        int p=a+b;
+		        System.out.println("The value is"+p);
+		        break;
+		    case '-' :
+		        int o=a-b;
+		        System.out.println("The value is"+o);
+		        break;
+		    case '*' :
+		        int y=a*b;
+		        System.out.println("The value is"+y);
+		        break;
+		    case '/' :
+		        int m=a/b;
+		        System.out.println("The value is"+m);
+		        break;
+		        
+		    case '%' :
+		        int n=a%b;
+		        System.out.println("The value is"+n);
+		        break;
+		        
+		    default:
+		        System.out.println("The value is not correct/////ERROR");
+		}
+		
+	}
+}

@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Enter the value of c");
+		char c=scan.next().charAt(0);
+		if(Character.isLetter(c)){
+		    System.out.println("The" +c+ "is alphabet");
+		    char low=Character.toLowerCase(c);
+		    if(String.valueOf(c).matches("[aeiou]")){
+		        System.out.println(" And The value is vowel");
+		    }
+		   
+		}
+		else{
+		    System.out.println("The charecter" +c+ " is a symbol");
+		}
+	    
+	}
+}
