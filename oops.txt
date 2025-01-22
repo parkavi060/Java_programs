@@ -1,0 +1,66 @@
+///
+
+public class Person
+{
+    String name;
+    int age; 
+    
+    Person(String name, int age){
+        this.name=name;
+        this.age=age;
+       
+    }
+    void display(){
+        System.out.println("Name:"+name);
+        System.out.println("Age:"+age);
+        }
+    
+    
+	public static void main(String[] args) {
+	    Person t=new Person("Parkavi",19);
+	    t.display();
+		
+		
+	}
+}
+
+
+
+///
+
+
+
+import java.util.*;
+import java.util.Scanner; 
+
+public class Rectangle
+{
+  
+    
+    int area(int length,int width){
+       
+
+        return length*width;
+    }
+    
+
+    int perimeter(int length,int width){
+       
+
+        return 2*(length+width);
+      
+        }
+    
+    
+	public static void main(String[] args) {
+	    Scanner scan =new Scanner(System.in);
+	    System.out.println( "Enter the value of Length");
+	    int length=scan.nextInt();
+	    System.out.println( "Enter the value of width");
+	    int width=scan.nextInt();
+	    Rectangle r = new Rectangle();
+	    System.out.println( "Area is:"+r.area(length,width));
+		System.out.println( "Perimeter is:"+r.perimeter(length,width));
+		
+	}
+}
