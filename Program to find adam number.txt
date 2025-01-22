@@ -1,0 +1,36 @@
+//Program to find adam number
+
+import java.util.*;
+
+public class Main{
+    public static void main(String [] parks){
+        int n=12;
+        int sq=n*n;
+        int s=0;
+        System.out.println("The original num:"  + n +   ",Squareroot is:"  +sq);
+        while(sq>0){
+            int r=sq%10;
+            s=s*10+r;
+            sq/=10;
+        }
+        System.out.println("The reversed square number is:"  +s);
+        int s1=0;
+        int squareroot=(int)Math.sqrt(s);
+        System.out.println("th squareroot of the reversed number is:" +squareroot);
+         while(squareroot>0){
+             int m=squareroot%10;
+             s1=s1*10+m;
+             squareroot/=10;
+         }
+         System.out.println("The reverse of squareroot is:"+s1);
+         
+        if(s1==s){
+            System.out.println("It is adam  number");
+            
+        }
+        else{
+            System.out.println("It is not adam number");
+        }
+
+        }
+    }
