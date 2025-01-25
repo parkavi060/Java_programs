@@ -1,0 +1,11 @@
+## Sorting array using buiult in function
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int a[]={12,45,64,78,99,43};
+		Arrays.sort(a);
+		System.out.println("The sorted array is "+Arrays.toString(a));
+	}
+}
