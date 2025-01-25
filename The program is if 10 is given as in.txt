@@ -1,0 +1,9 @@
+///The program is if 10 is given as input it should print -11 and if the input is -11 it should print 10
+
+public class Main
+{
+	public static void main(String[] args) {
+		int  num=10;
+		System.out.println(~num);
+	}
+}

@@ -1,0 +1,55 @@
+//types of functions
+
+
+import java.util.*;
+import java.util.Scanner;
+
+class user{
+    
+    Scanner scan=new Scanner(System.in);
+    static int a;
+    static int b;
+    
+    user(){
+    System.out.println("Enter the value of a:");
+    a=scan.nextInt();
+    System.out.println("Enter the value of b");
+    b=scan.nextInt();
+    }
+
+
+    int add(int a, int b){
+        return a+b;
+        
+    }
+
+    boolean oddoreven(){
+        if (a%2==0){
+            return true;
+            
+        }
+        else return false;
+    }
+    
+    void sub(int a,int b){
+        System.out.println(a-b);
+    }
+    static int multi(){
+    	 return a*b;
+    	}
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	    user u=new user();
+	    System.out.println("sum: " + u.add(u.a,u.b));
+        System.out.println("Is 'a' even? " + u.oddoreven()); 
+        System.out.print("Sub: ");
+	    u.sub(u.a,u.b);
+	    System.out.print("Multiplication: "+ user.multi());
+	    
+	    
+		
+	}
+}
