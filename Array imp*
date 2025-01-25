@@ -18,4 +18,58 @@ public class Main
 	}
 }
 
-###
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+public class Main {
+    public static void main(String[] args) {
+        int a[] = {1, 2, 3, 4, 5, 6};
+        int b[] = {7, 8, 9, 5, 3, 4};
+
+        // Check if lengths are the same
+        if (a.length != b.length) {
+            System.out.print("Not equal");
+            return;
+        }
+
+        // Check each element for equality
+        boolean areEqual = true;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] != b[i]) {
+                areEqual = false;
+                break;
+            }
+        }
+
+        if (areEqual) {
+            System.out.print("The two arrays are equal");
+        } else {
+            System.out.print("Not equal");
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+###To find if the array is sorted or not..
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int a[]={1,2,3,67,43,56,3,22};
+		boolean yes=true;
+		for(int i=0;i<a.length-1;i++){
+		    if(a[i]>a[i+1]){
+		        yes=false;
+		        break;
+		        
+		    }
+		    
+		}
+		if(yes){
+		    System.out.println("The array is sorted");
+		}
+		else{
+		    System.out.println("The array is not sorted");
+		}
+	}
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
