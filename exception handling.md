@@ -1,3 +1,4 @@
+``java[]
 public class excep {
 
 	public static void main(String[] args) {
@@ -15,3 +16,5 @@ public class excep {
 	}
 
 }
+
+``
