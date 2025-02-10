@@ -18,3 +18,28 @@ public class excep {
 }
 
 ``
+
+``java age exception handling
+
+public class excep {
+
+	public static void main(String[] args) {
+	int age=20;
+	
+	try {
+		if(age<18) {
+			 throw new IllegalStateException("Not eligible to vote");
+		
+	}
+		System.out.println("Eligible for vote");
+	}
+	catch(IllegalStateException e) {
+		System.out.println(e.getMessage());
+	}
+	
+
+	
+
+}
+}
+``
